@@ -1,0 +1,85 @@
+.component__TaskList {
+  width: 500px;
+  border: 1px solid black;
+}
+
+.component__TaskList h2 {
+  width: 100%;
+  text-align: center;
+  padding-block: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.component__TaskList .no-item {
+  width: 100%;
+  padding: 1rem;
+  color: gray;
+  text-align: center;
+}
+
+.component__TaskList .list {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+.component__TaskList .list .item {
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+}
+
+.component__TaskList .list .item:not(:last-of-type) {
+  border-bottom: 1px solid black;
+}
+
+.item-time {
+  color: black;
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid black;
+}
+
+.item-title {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.item-description {
+  flex-grow: 1;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.item button {
+  color: black;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0.25rem 0.5rem;
+  background: transparent;
+  border: 1px solid black;
+}
+
+.item button:first-of-type:hover {
+  color: white;
+  background: blue;
+  border-color: blue;
+}
+.item button:last-of-type:hover {
+  color: white;
+  background: red;
+  border-color: red;
+}

@@ -1,0 +1,54 @@
+.component__TaskTimer {
+  width: 500px;
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid black;
+
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clock-box {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  background: black;
+  color: white;
+}
+
+.btn-group {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.start-btn,
+.pause-btn,
+.save-btn {
+  width: 64px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  padding-block: 0.5rem;
+  background: transparent;
+  border: 1px solid black;
+  transition: all 300ms;
+}
+
+.start-btn:not(:disabled):hover,
+.pause-btn:not(:disabled):hover,
+.save-btn:not(:disabled):hover {
+  background: black;
+  color: white;
+}
+
+.start-btn:disabled,
+.pause-btn:disabled,
+.save-btn:disabled {
+  color: lightgray;
+  cursor: not-allowed;
+  border-color: lightgray;
+}
